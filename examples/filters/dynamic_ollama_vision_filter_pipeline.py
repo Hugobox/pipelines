@@ -40,7 +40,7 @@ class Pipeline:
         pass
 
     async def process_images_with_llava(self, images: List[str], content: str, vision_model: str, ollama_base_url: str) -> str:
-        url = f"{ollama_base_url}/api/chat"
+        url = f"{ollama_base_url}"
         payload = {
             "model": vision_model,
             "messages": [
